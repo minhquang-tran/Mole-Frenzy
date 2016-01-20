@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2012-11-11T04:57:41Z</created>
+    <modified>2012-11-11T04:57:41Z</modified>
+  </asset>
+  <library_images>
+    <image id="Image">
+      <init_from>StarGlow2.png</init_from>
+    </image>
+    <image id="Image1">
+      <init_from>StarGlow.png</init_from>
+    </image>
+    <image id="Image2">
+      <init_from>ItmCommonWStarB0.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="VisualMaterial" name="StarGlow2_png">
+      <instance_effect url="#Effect"/>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>StarGlow2.png</user_properties>
+        </technique>
+      </extra>
+    </material>
+    <material id="VisualMaterial1" name="StarGlow_png">
+      <instance_effect url="#Effect1"/>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>StarGlow.png</user_properties>
+        </technique>
+      </extra>
+    </material>
+    <material id="VisualMaterial2" name="ItmCommonWStarB0_png">
+      <instance_effect url="#Effect2"/>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>ItmCommonWStarB0.png</user_properties>
+        </technique>
+      </extra>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Effect" name="StarGlow2_png">
+      <profile_COMMON>
+        <newparam sid="Image-surface">
+          <surface type="2D">
+            <init_from>Image</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Image-sampler">
+          <sampler2D>
+            <source>Image-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Image-sampler" texcoord=""/>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1.55</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>StarGlow2.png</user_properties>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Effect1" name="StarGlow_png">
+      <profile_COMMON>
+        <newparam sid="Image1-surface">
+          <surface type="2D">
+            <init_from>Image1</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Image1-sampler">
+          <sampler2D>
+            <source>Image1-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Image1-sampler" texcoord=""/>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1.55</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>StarGlow.png</user_properties>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Effect2" name="ItmCommonWStarB0_png">
+      <profile_COMMON>
+        <newparam sid="Image2-surface">
+          <surface type="2D">
+            <init_from>Image2</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="Image2-sampler">
+          <sampler2D>
+            <source>Image2-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Image2-sampler" texcoord=""/>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <transparent opaque="A_ONE">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1.55</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>ItmCommonWStarB0.png</user_properties>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Geometry" name="mesh0">
+      <mesh>
+        <source id="GeometrySource" name="mesh0Pos">
+          <float_array id="GeometrySource-array" count="18">4.57899 5.58991 3.20624 -4.57899 -5.58991 -3.20624 -4.57899 5.58991 -3.20624 4.57899 -5.58991 3.20624 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="GeometrySource1" name="mesh0Nrm">
+          <float_array id="GeometrySource1-array" count="18">0.573576 0 -0.819152 0.573576 0 -0.819152 0.573576 0 -0.819152 0.573576 0 -0.819152 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource1-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="GeometrySource2" name="mesh0UV">
+          <float_array id="GeometrySource2-array" count="12">2 -2 0 0 0 -2 2 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource2-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry-vertices">
+          <input semantic="POSITION" source="#GeometrySource"/>
+          <input semantic="NORMAL" source="#GeometrySource1"/>
+          <input semantic="TEXCOORD" source="#GeometrySource2"/>
+        </vertices>
+        <triangles material="VisualMaterial0" count="2">
+          <input semantic="VERTEX" source="#Geometry-vertices" offset="0"/>
+          <p>1 2 0 3 1 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Geometry1" name="mesh1">
+      <mesh>
+        <source id="GeometrySource3" name="mesh1Pos">
+          <float_array id="GeometrySource3-array" count="18">3.93053 0 -3.97206 -3.92936 0 4.33996 -4.15543 0 -3.74599 4.15659 0 4.1139 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource3-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="GeometrySource4" name="mesh1Nrm">
+          <float_array id="GeometrySource4-array" count="18">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource4-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="GeometrySource5" name="mesh1UV">
+          <float_array id="GeometrySource5-array" count="12">1 -1 0 0 0 -1 1 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource5-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry1-vertices">
+          <input semantic="POSITION" source="#GeometrySource3"/>
+          <input semantic="NORMAL" source="#GeometrySource4"/>
+          <input semantic="TEXCOORD" source="#GeometrySource5"/>
+        </vertices>
+        <triangles material="VisualMaterial10" count="2">
+          <input semantic="VERTEX" source="#Geometry1-vertices" offset="0"/>
+          <p>1 2 0 3 1 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Geometry2" name="mesh2">
+      <mesh>
+        <source id="GeometrySource6" name="mesh2Pos">
+          <float_array id="GeometrySource6-array" count="1620">0.420619 -0.487731 -0.600706 1.19809 -0.297819 -1.48365 1.05746 -0.30837 -0.364113 0.984404 -0.297819 -1.63327 -0.019519 -0.30837 -1.11822 1.13749 -0.092834 -1.97413 -0.024893 -0.092834 -1.4261 1.13749 0.092834 -1.97413 -0.024893 0.092834 -1.4261 0.984404 0.297819 -1.63327 -0.019519 0.30837 -1.11822 0.420619 0.487731 -0.600706 -0.441327 0.487732 -0.585661 0 0.548021 0 -0.693374 0.487731 0.238748 0.012798 0.487731 0.733215 -0.641484 0.30837 0.916134 -0.097207 0.297819 1.90452 -0.160898 0.092834 2.2727 -0.039056 0.092834 2.37847 -0.039056 -0.092834 2.37847 0.12204 0.092834 2.37566 0.122039 -0.092834 2.37566 0.240116 -0.092834 2.2657 0.163615 -0.297819 1.89996 0.673065 -0.30837 0.893188 0.012798 -0.487731 0.733215 0.701284 -0.487732 0.214404 0 -0.548021 0 -0.441327 -0.487731 -0.585661 -1.0408 -0.297819 -1.59792 -1.20569 -0.092834 -1.93323 -1.20569 0.092834 -1.93323 -1.0408 0.297819 -1.59792 -1.24914 0.297819 -1.44093 -1.06952 0.30837 -0.326986 -1.36399 0.092834 -0.417015 -2.21119 0.092834 0.549281 -2.21119 -0.092834 0.549281 -2.27413 -0.092834 0.697843 -1.84134 -0.297819 0.496078 -2.22167 -0.092834 0.850185 -1.75641 -0.297819 0.742728 -2.08061 -0.092834 0.928505 -0.641484 -0.30837 0.916134 -0.818102 -0.092834 1.16837 -0.097208 -0.297819 1.90452 -0.160898 -0.092834 2.2727 1.85753 -0.297819 0.431515 2.22901 -0.092834 0.471777 2.2971 -0.092834 0.618053 2.2971 0.092834 0.618052 2.24999 -0.092834 0.772133 2.24999 0.092834 0.772133 2.11175 0.092834 0.855327 1.78127 0.297819 0.680978 0.673066 0.30837 0.893188 0.701284 0.487731 0.214404 -0.693374 -0.487731 0.238748 -1.06952 -0.30837 -0.326987 -1.24914 -0.297819 -1.44093 -1.52601 -0.092834 -1.69186 -1.49511 -0.092834 -1.85022 -1.49511 0.092834 -1.85021 -1.36643 -0.092834 -1.94718 -1.36643 0.092835 -1.94718 1.34861 -0.092834 -0.464363 1.46603 -0.092834 -1.74408 1.42963 -0.092834 -1.90127 1.46603 0.092834 -1.74408 1.42963 0.092834 -1.90127 1.19809 0.297819 -1.48365 1.29764 0.092834 -1.99368 1.78127 -0.297819 0.680978 0.858379 -0.092834 1.13911 0.240116 0.092834 2.2657 0.163615 0.297819 1.89996 0.858379 0.092834 1.13911 2.11175 -0.092834 0.855327 1.05746 0.30837 -0.364113 1.85753 0.297819 0.431514 1.34861 0.092834 -0.464363 2.22901 0.092834 0.471777 -1.84134 0.297819 0.496078 -2.27413 0.092834 0.697843 -2.22167 0.092834 0.850186 1.29764 -0.092834 -1.99368 -1.75641 0.297819 0.742729 -0.818102 0.092834 1.16837 -1.36399 -0.092834 -0.417015 -1.52601 0.092834 -1.69185 -2.08061 0.092834 0.928505 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource6-array" count="540" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="GeometrySource7" name="mesh2Nrm">
+          <float_array id="GeometrySource7-array" count="1620">0.092356 -0.986952 -0.131898 0.407641 -0.910171 -0.073601 0.393709 -0.900493 -0.184679 0.013145 -0.929184 -0.369382 -0.053977 -0.900493 -0.431508 -0.242338 -0.450342 -0.85934 -0.041804 -0.467988 -0.882745 -0.296311 0.362103 -0.883788 0.010972 0.467989 -0.883666 -0.070259 0.910171 -0.408231 0.038885 0.900492 -0.43313 0.092356 0.986952 -0.131898 -0.096903 0.986951 -0.128594 0.000000 1 0.000000 -0.152246 0.986952 0.052422 0.00281 0.986952 0.160993 -0.286046 0.900493 0.327553 -0.236473 0.925909 0.294572 -0.681443 0.450343 0.576911 -0.238178 0.652215 0.719643 -0.328971 -0.356739 0.874366 0.359286 0.356738 0.862352 0.263148 -0.652215 0.710892 0.701162 -0.450344 0.552777 0.24661 -0.925909 0.28614 0.297303 -0.900493 0.317371 0.002809 -0.986951 0.160994 0.153982 -0.986951 0.047077 -0.000000 -1 -0.000000 -0.096903 -0.986952 -0.128595 0.012652 -0.916866 -0.398995 0.265287 -0.3621 -0.893592 0.212201 0.450343 -0.867273 0.018166 0.925909 -0.37731 -0.387028 0.916865 -0.097814 -0.399914 0.900493 -0.170826 -0.837026 0.46799 -0.283502 -0.759252 0.450345 -0.469815 -0.76788 -0.3621 -0.528435 -0.933229 -0.356738 -0.042676 -0.375557 -0.916866 -0.135329 -0.594782 -0.652216 0.469945 -0.195929 -0.925909 0.322961 -0.309052 -0.450345 0.837661 -0.209965 -0.900493 0.380825 -0.485044 -0.467989 0.738728 -0.24476 -0.916866 0.315357 -0.739861 -0.362101 0.567 0.348342 -0.925909 -0.146117 0.742393 -0.450345 -0.496026 0.757415 -0.652217 -0.030589 0.931172 0.356737 -0.075218 0.729913 -0.35674 0.583065 0.610819 0.652215 0.448905 0.338097 0.450343 0.826366 0.207081 0.925909 0.315927 0.223128 0.900493 0.373265 0.153982 0.986952 0.047077 -0.152245 -0.986952 0.052422 -0.427069 -0.900493 -0.082007 -0.3677 -0.925909 -0.086538 -0.892166 -0.450344 -0.035073 -0.630744 -0.652215 -0.420449 -0.797547 0.356739 -0.486473 -0.247796 -0.356737 -0.900742 -0.230305 0.652216 -0.722201 0.826622 -0.46799 -0.312542 0.931834 -0.362102 -0.023835 0.720885 -0.473664 -0.505932 0.890398 0.450344 -0.06619 0.706194 0.540202 -0.457682 0.342611 0.929184 -0.138688 0.228864 0.473667 -0.850448 0.224287 -0.916866 0.330231 0.552685 -0.467989 0.689583 0.759199 0.362101 0.540833 0.255617 0.916866 0.306623 0.51053 0.467989 0.72135 0.31062 -0.362101 0.878862 0.423946 0.900493 -0.096862 0.370605 0.916866 -0.148354 0.843807 0.467989 -0.262633 0.748968 0.362101 -0.554915 -0.353229 0.925909 -0.133872 -0.758023 0.652215 -0.004141 -0.709122 0.356738 0.608181 0.18855 -0.540201 -0.820141 -0.212626 0.916866 0.337857 -0.528282 0.467989 0.708452 -0.852458 -0.467989 -0.233025 -0.932099 0.3621 0.008702 -0.279758 0.3621 0.889167 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource7-array" count="540" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="GeometrySource8" name="mesh2UV">
+          <float_array id="GeometrySource8-array" count="1080">0.5 -0.351734 0.528529 -0.101598 0.643785 -0.31505 0.471471 -0.101598 0.356215 -0.31505 0.456137 -0.023079 0.316627 -0.261755 0.456137 -0.023079 0.316627 -0.261755 0.471471 -0.101598 0.356215 -0.31505 0.5 -0.351734 0.347453 -0.46014 0.5 -0.50862 0.405721 -0.635543 0.594279 -0.635543 0.5 -0.747886 0.721517 -0.854309 0.756297 -0.926648 0.791396 -0.930232 0.791396 -0.930232 0.819907 -0.909972 0.819907 -0.909972 0.827268 -0.876213 0.767677 -0.821506 0.732649 -0.582557 0.594279 -0.635543 0.652547 -0.46014 0.5 -0.50862 0.347453 -0.46014 0.11305 -0.356305 0.04144 -0.317777 0.04144 -0.317777 0.11305 -0.356305 0.095418 -0.409382 0.267351 -0.582557 0.203296 -0.602914 0.172732 -0.876213 0.172732 -0.876213 0.180093 -0.909972 0.232323 -0.821506 0.208604 -0.930233 0.278483 -0.854309 0.243703 -0.926648 0.5 -0.747886 0.5 -0.813762 0.721517 -0.854309 0.756297 -0.926648 0.88695 -0.356305 0.95856 -0.317777 0.98911 -0.335056 0.98911 -0.335056 1 -0.367839 1 -0.367839 0.985668 -0.399382 0.904582 -0.409382 0.732649 -0.582557 0.652547 -0.46014 0.405721 -0.635543 0.267351 -0.582557 0.095418 -0.409382 0.014332 -0.399382 0 -0.367839 0 -0.367839 0.01089 -0.335056 0.01089 -0.335056 0.683373 -0.261755 0.543863 -0.023079 0.517621 0 0.543863 -0.023079 0.517621 0 0.528529 -0.101598 0.482379 0 0.904582 -0.409382 0.796704 -0.602914 0.827268 -0.876213 0.767677 -0.821506 0.796704 -0.602914 0.985668 -0.399382 0.643785 -0.31505 0.88695 -0.356305 0.683373 -0.261755 0.95856 -0.317777 0.232323 -0.821506 0.180093 -0.909972 0.208604 -0.930233 0.482379 0 0.278483 -0.854309 0.5 -0.813762 0.203296 -0.602914 0.014332 -0.399382 0.243703 -0.926648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#GeometrySource8-array" count="540" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Geometry2-vertices">
+          <input semantic="POSITION" source="#GeometrySource6"/>
+          <input semantic="NORMAL" source="#GeometrySource7"/>
+          <input semantic="TEXCOORD" source="#GeometrySource8"/>
+        </vertices>
+        <triangles material="VisualMaterial20" count="180">
+          <input semantic="VERTEX" source="#Geometry2-vertices" offset="0"/>
+          <p>1 2 0 3 1 0 3 0 4 5 3 4 5 4 6 7 5 6 7 6 8 9 7 8 9 8 10 11 9 10 11 10 12 13 11 12 13 12 14 15 13 14 15 14 16 17 15 16 17 16 18 19 17 18 19 18 20 21 19 20 21 20 22 23 21 22 23 22 24 25 23 24 25 24 26 27 25 26 27 26 28 0 27 28 0 28 29 4 0 29 4 29 30 6 4 30 6 30 31 8 6 31 8 31 32 10 8 32 10 32 33 12 10 33 12 33 34 35 12 34 35 34 36 37 35 36 37 36 38 39 37 38 39 38 40 41 39 40 41 40 42 43 41 42 43 42 44 45 43 44 45 44 46 47 45 46 47 46 20 18 47 20 27 0 2 48 27 2 48 2 49 50 48 49 50 49 51 52 50 51 52 51 53 54 52 53 54 53 55 56 54 55 56 55 57 15 56 57 15 57 13 28 26 58 29 28 58 29 58 59 60 29 59 60 59 61 62 60 61 62 61 63 64 62 63 64 63 65 32 64 65 32 65 33 66 2 1 67 66 1 67 1 68 69 67 68 69 68 70 71 69 70 71 70 72 9 71 72 9 72 7 27 48 73 25 27 73 25 73 74 23 25 74 23 74 75 21 23 75 21 75 76 19 21 76 19 76 17 15 17 76 56 15 76 56 76 77 54 56 77 54 77 78 52 54 78 52 78 73 50 52 73 50 73 48 11 13 57 79 11 57 79 57 80 81 79 80 81 80 82 66 81 82 66 82 49 2 66 49 14 12 35 83 14 35 83 35 37 84 83 37 84 37 39 85 84 39 85 39 41 43 85 41 68 1 3 86 68 3 86 3 5 72 86 5 72 5 7 14 83 87 16 14 87 16 87 88 18 16 88 18 88 47 26 46 44 58 26 44 58 44 42 40 58 42 59 58 40 89 59 40 89 40 38 36 89 38 61 59 89 90 61 89 90 89 36 34 90 36 45 47 88 91 45 88 91 88 87 85 91 87 80 53 51 82 80 51 82 51 49 22 20 46 24 22 46 24 46 26 30 62 64 31 30 64 31 64 32 80 57 55 53 80 55 71 9 11 79 71 11 69 71 79 81 69 79 30 29 60 62 30 60 34 33 65 63 34 65 90 34 63 61 90 63 72 70 68 86 72 68 81 66 67 69 81 67 74 73 78 77 74 78 75 74 77 76 75 77 87 83 84 85 87 84 43 45 91 85 43 91</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Controller">
+      <skin source="#Geometry">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Controller-joints">
+          <Name_array id="Controller-joints-array" count="6">WpnKirbyStarMissile_TopN WpnKirbyStarMissile_RotN WpnKirbyStarMissile_XRotN WpnKirbyStarMissile_Glow2M WpnKirbyStarMissile_GlowM WpnKirbyStarMissile_WStarM</Name_array>
+          <technique_common>
+            <accessor source="#Controller-joints-array" count="6" stride="1">
+              <param name="JOINT" type="Name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Controller-bind_poses">
+          <float_array id="Controller-bind_poses-array" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Controller-bind_poses-array" count="6" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Controller-weights">
+          <float_array id="Controller-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Controller-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Controller-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#Controller-bind_poses"/>
+        </joints>
+        <vertex_weights count="6">
+          <input semantic="JOINT" source="#Controller-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#Controller-weights" offset="1"/>
+          <vcount>1 1 1 1 0 0 </vcount>
+          <v>3 0 3 0 3 0 3 0</v>
+        </vertex_weights>
+      </skin>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>SkinController</user_properties>
+        </technique>
+      </extra>
+    </controller>
+    <controller id="Controller1">
+      <skin source="#Geometry1">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Controller1-joints">
+          <Name_array id="Controller1-joints-array" count="6">WpnKirbyStarMissile_TopN WpnKirbyStarMissile_RotN WpnKirbyStarMissile_XRotN WpnKirbyStarMissile_Glow2M WpnKirbyStarMissile_GlowM WpnKirbyStarMissile_WStarM</Name_array>
+          <technique_common>
+            <accessor source="#Controller1-joints-array" count="6" stride="1">
+              <param name="JOINT" type="Name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Controller1-bind_poses">
+          <float_array id="Controller1-bind_poses-array" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Controller1-bind_poses-array" count="6" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Controller1-weights">
+          <float_array id="Controller1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Controller1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Controller1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#Controller1-bind_poses"/>
+        </joints>
+        <vertex_weights count="6">
+          <input semantic="JOINT" source="#Controller1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#Controller1-weights" offset="1"/>
+          <vcount>1 1 1 1 0 0 </vcount>
+          <v>4 0 4 0 4 0 4 0</v>
+        </vertex_weights>
+      </skin>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>SkinController</user_properties>
+        </technique>
+      </extra>
+    </controller>
+    <controller id="Controller2">
+      <skin source="#Geometry2">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Controller2-joints">
+          <Name_array id="Controller2-joints-array" count="6">WpnKirbyStarMissile_TopN WpnKirbyStarMissile_RotN WpnKirbyStarMissile_XRotN WpnKirbyStarMissile_Glow2M WpnKirbyStarMissile_GlowM WpnKirbyStarMissile_WStarM</Name_array>
+          <technique_common>
+            <accessor source="#Controller2-joints-array" count="6" stride="1">
+              <param name="JOINT" type="Name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Controller2-bind_poses">
+          <float_array id="Controller2-bind_poses-array" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Controller2-bind_poses-array" count="6" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Controller2-weights">
+          <float_array id="Controller2-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Controller2-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Controller2-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#Controller2-bind_poses"/>
+        </joints>
+        <vertex_weights count="540">
+          <input semantic="JOINT" source="#Controller2-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#Controller2-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </vcount>
+          <v>5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0</v>
+        </vertex_weights>
+      </skin>
+      <extra>
+        <technique profile="FCOLLADA">
+          <user_properties>SkinController</user_properties>
+        </technique>
+      </extra>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="rdmscene">
+      <node id="VisualSceneNode1" name="WpnKirbyStarMissile_TopN" sid="WpnKirbyStarMissile_TopN" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="VisualSceneNode2" name="WpnKirbyStarMissile_RotN" sid="WpnKirbyStarMissile_RotN" type="JOINT">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="VisualSceneNode3" name="WpnKirbyStarMissile_XRotN" sid="WpnKirbyStarMissile_XRotN" type="JOINT">
+            <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <node id="VisualSceneNode4" name="WpnKirbyStarMissile_Glow2M" sid="WpnKirbyStarMissile_Glow2M" type="JOINT">
+              <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            </node>
+            <node id="VisualSceneNode5" name="WpnKirbyStarMissile_GlowM" sid="WpnKirbyStarMissile_GlowM" type="JOINT">
+              <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            </node>
+            <node id="VisualSceneNode6" name="WpnKirbyStarMissile_WStarM" sid="WpnKirbyStarMissile_WStarM" type="JOINT">
+              <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node id="VisualSceneNode7" name="mesh0" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#Controller">
+          <skeleton>#VisualSceneNode1</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="VisualMaterial0" target="#VisualMaterial"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="VisualSceneNode8" name="mesh1" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#Controller1">
+          <skeleton>#VisualSceneNode1</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="VisualMaterial10" target="#VisualMaterial1"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="VisualSceneNode9" name="mesh2" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_controller url="#Controller2">
+          <skeleton>#VisualSceneNode1</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="VisualMaterial20" target="#VisualMaterial2"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

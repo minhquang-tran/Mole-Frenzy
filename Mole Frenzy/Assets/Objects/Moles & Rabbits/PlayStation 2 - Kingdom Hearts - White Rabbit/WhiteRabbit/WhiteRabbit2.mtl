@@ -1,0 +1,38 @@
+# Exported from 3D Builder
+
+newmtl 0_0
+Kd 1.000000 1.000000 1.000000
+map_Kd C:\Users\Tuan\Desktop\Resetti\texture004.png
+
+newmtl 1_0
+Kd 1.000000 1.000000 1.000000
+map_Kd C:\Users\Tuan\Desktop\Resetti\texture001.png
+
+newmtl 1_1
+Kd 1.000000 1.000000 1.000000
+
+newmtl 2_0
+Kd 1.000000 1.000000 1.000000
+map_Kd C:\Users\Tuan\Desktop\Resetti\texture000.png
+
+newmtl 3_0
+Kd 1.000000 1.000000 1.000000
+map_Kd C:\Users\Tuan\Desktop\Resetti\texture003.png
+
+newmtl 3_1
+Kd 1.000000 1.000000 1.000000
+
+newmtl 4_0
+Kd 1.000000 1.000000 1.000000
+map_Kd C:\Users\Tuan\Desktop\Resetti\texture002.png
+
+newmtl 5_0
+Kd 1.000000 1.000000 1.000000
+map_Kd C:\Users\Tuan\Desktop\Resetti\texture001.png
+
+newmtl 5_1
+Kd 1.000000 1.000000 1.000000
+
+newmtl 6_0
+Kd 1.000000 1.000000 1.000000
+map_Kd C:\Users\Tuan\Desktop\Resetti\texture003.png
