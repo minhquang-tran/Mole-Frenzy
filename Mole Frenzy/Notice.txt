@@ -1,0 +1,43 @@
+Mole Frenzy game is developed with Unity using programming language C#
+
+
+-----------------------------------------------------------------
+References:
+
+Unity engine:
+https://unity3d.com/
+
+Parse:
+https://parse.com/
+
+3D Models:
+
+Monty Mole by John2k4 from the Models Resource
+http://www.models-resource.com/wii/marioparty9/model/4230/
+
+Monty Mole by Previous from the Models Resource 
+http://www.models-resource.com/wii/mariostrikerscharged/model/5779/
+
+White Rabbit by Roxas358 from The Models Resource
+http://www.models-resource.com/playstation_2/KingdomHearts/model/1802/
+
+Kirby Effects by MightyJetters from the Models Resource 
+http://www.models-resource.com/wii/SuperSmashBrosBrawl/model/4466/
+
+Resetti by thegameexplorer from The Models Resource
+http://www.models-resource.com/wii/SuperSmashBrosBrawl/model/3800/
+
+Other models and graphics are from Unity engine.
+
+Music:
+Mushroom Dance by bart from OpenGameArt.org
+http://opengameart.org/content/mushroom-dance
+
+Forest by syncopika from OpenGameArt.org
+http://opengameart.org/content/forest
+
+Puzzle Music by axtoncrolley from OpenGameArt.org
+http://opengameart.org/content/puzzle-music-desert-meets-shore-theme
+
+Relax_background1 by joaquinton from OpenGameArt.org
+http://opengameart.org/content/relaxbackground1-0
